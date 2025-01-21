@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Tutorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link href="./assets/css/italia.css" rel="stylesheet">
+<link href="./assets/css/cm.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Aggiungi il meta viewport */
+  body {
+    font-family: "Nunito";
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Impostazioni di base */
+  .container-xxl {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Media query per dispositivi mobili */
+  @media (max-width: 767px) {
+    .navbar-toggler {
+      display: block;
+    }
+
+    .navbar-nav {
+      display: block;
+      width: 100%;
+    }
+
+    .it-header-center-wrapper {
+      text-align: center;
+    }
+
+    .it-header-slim-wrapper-content a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  /* Media query per tablet e schermi più grandi */
+  @media (max-width: 991px) {
+    .it-header-center-wrapper {
+      text-align: center;
+    }
+
+    .navbar-toggler {
+      display: block;
+    }
+
+    .navbar-nav {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  /* Media query per desktop */
+  @media (min-width: 992px) {
+    .navbar-toggler {
+      display: none;
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+</style>
+<style>
+  body {
+  font-family: "Nunito";
+}
+.elemento {
+  margin: 30px; /* Distanza di 20px da tutti i lati */
+}
+.elementogrande {
+  margin: 90px; /* Distanza di 20px da tutti i lati */
+}
+.logo {
+    width: 120px; /* Larghezza del logo */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    margin-right: 20px;
+}
+</style>
+</head>
+<body>
+<header class="it-header-wrapper it-shadow">
+  <div class="it-header-slim-wrapper theme-light">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="d-none d-lg-block navbar-brand" href="https://gabrieljones.it/">Servizio offerto da Gabriel Jones</a>
+            <div class="nav-mobile">
+              <nav aria-label="Navigazione secondaria">
+                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC2" role="button" aria-expanded="false" aria-controls="menuC2">
+                  <span>Servizio offerto da Gabriel Jones</span>
+                  <svg class="icon" aria-hidden="true"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menuC2">
+                  <ul class="link-list">
+                    <li><a class="dropdown-item list-item" href="https://comune.fontanafredda.pn.it">Comune di Fontanafredda</a></li>
+                    <li><a class="dropdown-item list-item" href="https://regione.fvg.it">Regione FVG</a></li>
+                    <li><a class="dropdown-item list-item" href="https://gabrieljones.it">Gabriel Jones</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="it-header-slim-right-zone">
+              <div class="it-access-top-wrapper">
+                <a class="btn btn-primary btn-sm" href="https://www.zoho.com/login.html">Accesso Riservato</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper theme-light">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/">
+                  <img src="https://u.g.18f.it/assets/img/logo.png" alt="Logo di Arena Giovani" class="logo">
+                  <div class="it-brand-text">
+                    <div class="it-brand-title">Arena Giovani</div>
+                    <div class="it-brand-tagline d-none d-md-block">Molto più di quello che non si vede.</div>
+                  </div>
+                </a>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="it-header-navbar-wrapper theme-light-desk">
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col-12">
+        <!--start nav-->
+        <nav class="navbar navbar-expand-lg" aria-label="Navigazione principale">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav3" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav3">
+            <svg class="icon">
+              <use href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
+            </svg>
+          </button>
+          <div class="navbar-collapsable" id="nav3" style="display: none;">
+            <div class="overlay" style="display: none;"></div>
+            <div class="close-div">
+              <button class="btn close-menu" type="button">
+                <span class="visually-hidden">Nascondi la navigazione</span>
+                <svg class="icon"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+              </button>
+            </div>
+            <div class="menu-wrapper">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link active" href="/" aria-current="page"><span>homepage</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/proposte/"><span>Le proposte</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/documenti/"><span>Documenti</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/trasparenza/"><span>Trasparenza</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/invia/"><span>Scrivici</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/aree/"><span>Aree e Uffici</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/organi/"><span>Organi</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/uffici/"><span>Uffici</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="it-hero-wrapper it-dark it-overlay">
+  <!-- - img-->
+  <div class="img-responsive-wrapper">
+    <div class="img-responsive">
+        <div class="img-wrapper"><img src="https://www.grimel.it/new/wp-content/uploads/2017/01/grimel-comune-fontanafredda-stadio-001.jpg" title="titolo immagine" alt="descrizione immagine"></div>
+    </div>
+  </div>
+  <!-- - texts-->
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+          <div class="it-hero-text-wrapper bg-dark">
+              <h2>Benvenuti su Arena Giovani</h2>
+              <p class="d-none d-lg-block">Per dare voce ai giovani, ascoltiamo le loro idee, incoraggiamo i loro sogni e costruiamo insieme un futuro migliore.</p>
+              <div class="it-btn-container"><a class="btn btn-sm btn-secondary" href="/invia/">Scrivici</a></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="elementogrande"></div>
+
+<div class="container">  
+  <section>
+    <h2>Chi siamo?</h2>
+    <p><strong>Arena Giovani</strong> è un progetto innovativo che offre uno spazio dinamico e inclusivo dedicato ai giovani, dove idee, talenti e proposte possono prendere forma e crescere. Creato per permettere ai giovani di diventare protagonisti del cambiamento sociale, <strong>Arena Giovani</strong> si propone come un punto di riferimento per l’incontro, la collaborazione e la creazione di iniziative che guardano al futuro.</p>
+
+    <p>Guidato da un presidente appassionato e supportato da soci e collaboratori altamente qualificati, <strong>Arena Giovani</strong> mette a disposizione uffici, risorse e opportunità per incentivare la partecipazione attiva dei giovani in ambito sociale, culturale, ambientale e innovativo. Con un’attenzione particolare alla sostenibilità e al benessere collettivo, <strong>Arena Giovani</strong> è il luogo ideale per chi vuole fare la differenza e contribuire concretamente a una società più equa e inclusiva.</p>
+    <div class="elemento"></div>
+  </section>
+
+<section>
+    <h4>Cosa Offriamo in Arena Giovani?</h4>
+    <p>Un ambiente che stimola la creatività, la collaborazione e la crescita professionale. I nostri uffici e spazi sono pensati per accogliere giovani talentuosi e motivati, che possano collaborare su progetti concreti, partecipare a eventi formativi e ricevere supporto per le proprie idee. Ogni giovane avrà la possibilità di interagire con esperti, sviluppare competenze e dare vita a iniziative capaci di avere un impatto positivo sulla comunità.</p>
+    <div class="elemento"></div>
+  </section>
+
+<section>
+    <h4>Unisciti ad Arena Giovani</h4>
+    <p><strong>Unisciti ad Arena Giovani</strong> e diventa parte di un movimento che dà forma e voce al futuro. Siamo pronti a supportarti nel tuo percorso di crescita e a collaborare per costruire insieme un mondo migliore.</p>
+    <div class="elemento"></div>
+  </section>
+<h2>Ultime Proposte</h2>
+<div class="elemento"></div>
+
+<div class="row">
+  <div class="col-12 col-lg-8">
+    <!--start card-->
+    <div class="card-wrapper card-space">
+      <div class="card card-bg card-big border-bottom-card">
+        <div class="flag-icon"></div>
+        <div class="etichetta">
+          <svg class="icon"><use href="./assets/svg/icons.svg#in-pa"></use></svg>
+          <span>Sviluppo</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
+          <p class="card-text font-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="read-more" href="#">
+            <span class="text">Leggi di più</span>
+            <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span>
+            <svg class="icon"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+  </div>
+</div>
+
+
+<h2>Proposte fissate</h2>
+<div class="elemento"></div>
+
+<h2>Organi</h2>
+<div class="elemento"></div>
+
+<h2>Aree</h2>
+<div class="elemento"></div>
+
+</div>
+<script type="text/javascript" src="/assets/js/script.js"></script>
+</body>
+</html>
